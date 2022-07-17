@@ -1,0 +1,30 @@
+.home-section{
+  height: 100vh;
+  padding-top: 100px;
+
+  .campaign-logo{
+    width: 400px;
+    height: 400px;
+  }
+
+  .introduction{
+    font-size: 25px;
+    line-height: 25px;
+    width: 45%;
+    text-align: center;
+  }
+}
+
+section{
+  h1{
+    font-size: 65px;
+  }
+}
+
+.prizes{
+  background-color: #171b29;
+}
+
+app-card-list{
+  width: 100%;
+}

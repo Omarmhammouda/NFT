@@ -1,0 +1,28 @@
+.navbar {
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    width: 25%;
+  }
+
+  .menu {
+    a {
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 30px;
+      margin: 0 15px;
+      padding-bottom: 5px;
+
+      &:hover{
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+
+  .connect{
+    width: 25%;
+  }
+}

@@ -1,0 +1,48 @@
+<div fxLayout="column wrap" fxLayoutGap="64px" fxLayoutAlign="start center">
+  <div *ngFor="let prize of data; let i = index"
+    class="prize-card">
+
+    <div class="prize-container" *ngIf="i%2==0"
+      fxLayout="row"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="start center">
+      <div class="prize-thumbnail-container">
+        <img class="prize-thumbnail" src={{prize.image}} />
+      </div>
+      <div class="prize-content" fxLayout="column wrap" fxLayoutAlign="center center">
+        <div class="prize-header">
+          <h1>
+            {{prize.title}}
+          </h1>
+        </div>
+        <div class="prize-description">
+          <p *ngFor="let descriptionParagraph of prize.description">
+            {{descriptionParagraph}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prize-container" *ngIf="i%2==1"
+      fxLayout="row-reverse"
+      fxLayout.lt-md="column"
+      fxLayoutAlign="start center">
+      <div class="prize-thumbnail-container">
+        <img class="prize-thumbnail" src={{prize.image}} />
+      </div>
+      <div class="prize-content" fxLayout="column wrap" fxLayoutAlign="center center">
+        <div class="prize-header">
+          <h1>
+            {{prize.title}}
+          </h1>
+        </div>
+        <div class="prize-description">
+          <p *ngFor="let descriptionParagraph of prize.description">
+            {{descriptionParagraph}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

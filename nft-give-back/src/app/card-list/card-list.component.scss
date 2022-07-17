@@ -1,0 +1,58 @@
+.prize-card {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.prize-container{
+  width: 100%;
+}
+
+.prize-thumbnail-container{
+  width: 50%;
+  height: 100%;
+}
+
+.prize-thumbnail{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prize-content {
+  width: 50%;
+  height: 100%;
+}
+
+.prize-content h1{
+  font-size: 42px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 82px;
+}
+
+.prize-description{
+  width: 70%;
+}
+
+.prize-description p {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .prize-card{
+    height: auto;
+  }
+  .prize-content,
+  .prize-thumbnail-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .prize-content h1 {
+    margin-bottom: 30px;
+  }
+}

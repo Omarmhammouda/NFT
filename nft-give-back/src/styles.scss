@@ -1,0 +1,40 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #24262b;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+.gradient-background{
+  background-image: linear-gradient(to right, #fc0541 , #ff8d0d);
+}
+
+.redirect-btn {
+  font-size: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+
+.social-media-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+
+  .icon {
+    margin: auto;
+    font-size: 45px;
+    color: black;
+  }
+}
