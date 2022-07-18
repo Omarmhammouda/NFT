@@ -3,21 +3,25 @@ section{
 }
 
 .subscribe{
-  height: 300px;
+  height: 200px;
   background-color: #171b29;
+  font-family: 'Noto Sans semibold';
 
   h1 {
-    font-size: 65px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .subscribe-btn{
     background-color: #3a3d49;
+    height: 48px;
+    border-radius: 24px;
   }
 }
 
 .helpful-info{
-  height: 450px;
-  padding-top: 50px;
+  height: 330px;
+  padding-top: 38px;
   padding-left: 150px;
   padding-right: 150px;
 
@@ -27,35 +31,56 @@ section{
 
     h1 {
       margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 50px;
+      margin-bottom: 16px;
+      font-size: 32px;
+      line-height: 42px;
+      font-family: 'Noto Sans semibold';
     }
 
     p {
       margin: 0;
       margin-bottom: 10px;
-      font-size: 25px;
-      line-height: 40px;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: 'Noto Sans medium';
     }
   }
 }
 
 .legal{
-  height: 100px;
+  height: 80px;
   background-color: #171b29;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'Noto Sans semibold';
 
   .copyright-claim {
     margin-left: 150px;
-    font-size: 25px;
   }
 
   .legal-resources {
     margin-right: 150px;
 
     a {
-      font-size: 25px;
       margin: 0 20px;
     }
+  }
+}
+
+.links, .follow, .resources {
+  a {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Noto Sans semibold';
+  }
+
+  h2{
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Noto Sans semibold';
   }
 }
 
@@ -63,13 +88,4 @@ section{
   background-color: #ffd2d7;
 }
 
-a {
-  font-size: 30px;
-  line-height: 60px;
-}
 
-h2{
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 35px;
-}

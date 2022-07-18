@@ -15,4 +15,12 @@ export class CardListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public get thumbnailPrizes(){
+    return this.data.filter(x => x.image !== '')
+  }
+
+  public get noThumbnailPrizes(){
+    return this.data.filter(x => x.image === '')
+  }
+
 }
