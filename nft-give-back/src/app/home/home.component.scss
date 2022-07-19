@@ -25,6 +25,14 @@ section{
   }
 }
 
+.intro-video {
+  display: flex;
+
+  video {
+    width: 100%;
+  }
+}
+
 .prizes{
   padding-top: 55px;
   background-color: #171b29;

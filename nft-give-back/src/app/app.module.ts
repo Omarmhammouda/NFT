@@ -8,7 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CardListComponent } from './card-list/card-list.component'
+import { CardListComponent } from './card-list/card-list.component';
+import { SubscribeInfoComponent } from './subscribe-info/subscribe-info.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardListComponent } from './card-list/card-list.component'
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    CardListComponent
+    CardListComponent,
+    SubscribeInfoComponent
   ],
   imports: [
     BrowserModule,
