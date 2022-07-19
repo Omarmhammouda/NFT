@@ -23,13 +23,17 @@ export class FooterComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(SubscribeInfoComponent, {
-      width: '250px',
+      width: '300px',
       data: this.subscribeInfo,
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
-      this.subscribeInfo = result;
+      if(result){
+        this.subscribeInfo = new SubscribeInfoModel();
+      } else {
+        this.subscribeInfo = result;
+      }
     });
   }
 

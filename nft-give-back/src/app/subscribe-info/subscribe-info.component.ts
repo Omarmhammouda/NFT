@@ -15,6 +15,9 @@ export class SubscribeInfoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    if(this.data){
+      this.data = new SubscribeInfoModel();
+    }
   }
 
   onNoClick(): void {
