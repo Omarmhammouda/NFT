@@ -11,8 +11,28 @@
     font-size: 12px;
     line-height: 16px;
     width: 45%;
+    min-width: 300px;
     text-align: center;
     font-family: 'Noto Sans semibold';
+  }
+
+  .scroll-arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -22,6 +42,7 @@ section{
     line-height: 109px;
     font-family: 'Noto Sans medium';
     margin: 0;
+    text-align: center;
   }
 }
 
@@ -107,4 +128,13 @@ section{
 
 app-card-list{
   width: 100%;
+}
+
+@media all and (max-width: 960px){
+  .home-section{
+    .scroll-arrow{
+      bottom: 20px;
+      left: 20px;
+    }
+  }
 }

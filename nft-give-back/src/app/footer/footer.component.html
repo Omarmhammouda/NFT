@@ -1,8 +1,14 @@
-<div class="subscribe" fxLayout="row" fxLayoutAlign="space-around center">
+<div class="subscribe"
+  fxLayout.gt-md="row"
+  fxLayout.lt-lg="column"
+  fxLayoutAlign="space-around center">
   <h1>Subscribe to notifications for more givebacks</h1>
   <a class="redirect-btn subscribe-btn">Subscribe</a>
 </div>
-<div class="gradient-background helpful-info" fxLayout="row" fxLayoutAlign="space-around start">
+<div class="gradient-background helpful-info"
+  fxLayout.gt-md="row"
+  fxLayout.lt-lg="column"
+  fxLayoutAlign="space-around start">
   <div class="info" fxLayout="column" fxLayoutAlign="space-around start">
     <h1>NFT GiveBack</h1>
     <p>
@@ -43,7 +49,11 @@
   </div>
 
 </div>
-<div class="legal" fxLayout="row" fxLayoutAlign="space-between center">
+<div class="legal"
+  fxLayout.gt-sm="row"
+  fxLayout.lt-md="column"
+  fxLayoutAlign.gt-sm="space-between center"
+  fxLayoutAlign.lt-md="space-around center">
   <span class="copyright-claim">&#169; 2022 NFT GiveBack. All Rights Reserved.</span>
   <div class="legal-resources">
     <a>Privacy Policy</a>

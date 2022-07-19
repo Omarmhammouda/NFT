@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrizeModel } from '../shared/models/prize.model';
+import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { PrizeModel } from '../shared/models/prize.model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  public faArrowDown = faArrowAltCircleDown;
 
   public prizes: PrizeModel[] = [
     {

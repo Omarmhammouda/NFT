@@ -52,7 +52,9 @@
 
   </div>
 
-  <div fxLayout="row" class="no-thumbnail-prize-container">
+  <div class="no-thumbnail-prize-container"
+    fxLayout.gt-sm="row"
+    fxLayout.lt-md="column">
     <div *ngFor="let prize of noThumbnailPrizes; let i = index" class="prize-content">
       <div class="prize-header">
         <h1>

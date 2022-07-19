@@ -3,13 +3,15 @@ section{
 }
 
 .subscribe{
-  height: 200px;
+  min-height: 200px;
   background-color: #171b29;
   font-family: 'Noto Sans semibold';
+  padding: 0 50px;
 
   h1 {
     font-size: 40px;
     line-height: 50px;
+    text-align: center;
   }
 
   .subscribe-btn{
@@ -20,10 +22,8 @@ section{
 }
 
 .helpful-info{
-  height: 330px;
-  padding-top: 38px;
-  padding-left: 150px;
-  padding-right: 150px;
+  min-height: 330px;
+  padding: 38px 150px 30px 150px;
 
   .info {
     width:40%;
@@ -48,7 +48,7 @@ section{
 }
 
 .legal{
-  height: 80px;
+  min-height: 80px;
   background-color: #171b29;
   font-size: 13px;
   line-height: 19px;
@@ -88,4 +88,43 @@ section{
   background-color: #ffd2d7;
 }
 
+@media all and (max-width: 1279px) {
+  .subscribe {
+    padding-bottom: 30px;
+  }
 
+  .helpful-info {
+
+    .info {
+      width: 100%;
+      margin-bottom: 30px;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    div {
+      width: 100%;
+    }
+
+  }
+}
+
+@media all and (max-width: 959px) {
+  .legal{
+    .copyright-claim {
+      margin-left: 0;
+    }
+
+    .legal-resources {
+      margin-right: 0;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  .helpful-info {
+    padding: 38px 30px 30px 30px;
+  }
+}
