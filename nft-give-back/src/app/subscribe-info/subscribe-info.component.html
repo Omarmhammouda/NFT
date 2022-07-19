@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Hello</h1>
+<div mat-dialog-content>
+  <p>Whats your contact info?</p>
+  <label>Name</label>
+  <input [(ngModel)]="data.name">
+  <label>Email</label>
+  <input [(ngModel)]="data.email">
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>
